@@ -1,0 +1,419 @@
+html{
+    background-color: rgb(243, 236, 236);
+}
+
+body{
+    background-color: rgb(243, 236, 236);
+    margin: 0;
+}
+header{
+    display: flex;
+    height: 105px;
+    background-image: url(Fondo\ Encabezado.jpg);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+.menu a{
+    content: "";
+    text-decoration: none;
+    color: azure;
+    transition: color .5s;
+    margin: 50px;
+    padding-right: 150px;
+    font-size: x-large;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
+}
+
+.menu a:hover{
+    color: rgb(40, 148, 94);
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+.logo img{
+    border-radius: 50%;
+    width: 100px;
+}
+
+
+.nav_menu, .nav_input{
+    display: none;
+}
+
+
+  
+
+
+.nav_img{
+    width: 50px; 
+    display: block;
+    cursor: pointer;
+    display: none;
+}
+.nav_menu{
+   display: grid;
+   grid-auto-flow: column;
+   gap: 3em;
+   position: fixed;
+   top: 100px;
+   bottom: 0;
+   background: url(Fondo\ Trabajo\ 3.jpg);
+   width: 100%;
+   left: 0;
+   display: flex;
+   justify-content: space-evenly;
+   flex-direction: column;
+   align-items: center;
+   clip-path: circle(0 at center);
+   transition: clip-path 1s;
+}
+
+.nav_item{
+    color: rgb(19, 6, 6);
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100% , 0 100%);
+    transition: clip-path .3s;
+}
+
+.nav_item::after{
+    content: "";
+    display: block;
+    background: #fff;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
+}
+
+.nav_item:hover{
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+
+
+
+.nav_input:checked + .nav_menu{
+    clip-path: circle(100% at center);
+}
+
+
+.nosotros{
+    background-image: url(Fondo\ Trabajo\ 5.jpg);
+    background-size: cover;
+    display: flow-root;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+}
+
+.nosotros h1{
+    font-family:  'Rubik Gemstones', cursive;
+    font-size: xx-large;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+
+
+.nosotros h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    padding: 1%;
+    text-decoration: underline;
+    width: 1%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(50) 1s 1 normal both, blink 1s steps(1) none;
+}
+
+.nosotros p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    padding: 1%;
+    float: left;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(50) 1s 1 normal both, blink 1s steps(1) none;
+}
+
+.nosotros img{
+    border-radius: 50%;
+    width: 190px;
+    float: right;
+    margin-right: 160px;
+}
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:#024959;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
+
+.productos_principales{
+    background-image: url(Fondo\ Trabajo\ 2.jpg);
+    background-size: cover;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    justify-content: center;
+    width: 100%;
+    height: 1000px;
+}
+.titulo_productos{
+    font-family:  cursive;
+    background-image: url(Fondo\ Trabajo\ 2.jpg);
+    background-size: cover;
+    margin: 0%;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(209, 183, 183);
+}
+
+.productos_principales .cartas{
+    background:url(Fondo\ Trabajo.jpg);
+    width: 330px;
+    height: 400px;
+    border-radius: 8px;
+    border: 4px solid rgb(80, 7, 7);
+    box-shadow: 0 2px 2px rgba(224, 20, 20, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.productos_principales .cartas:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.productos_principales .cartas img{
+    background-color: antiquewhite;
+    height: 220px;
+    background-size: cover;
+    margin: 1%;
+}
+
+.productos_principales .cartas h4{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.productos_principales .cartas p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.productos_principales .cartas a{
+    font-weight: 500;
+    color: #205b83;
+}
+
+footer{
+    background-image: url(Fondo\ Productos\ 2.jpg);
+    background-size: cover;
+    text-decoration: underline;
+    margin-bottom: 0%;
+}
+
+.redes_socieles a{
+    margin: 50px;
+}
+
+.redes_socieles h1{
+    margin-top: 0%;
+    font-size: 40px;
+    font-family: 'Rubik Bubbles', cursive;
+    text-align: center;
+}
+.redes_socieles a img{
+    margin-left: 225px;
+    width: 50px;
+}
+
+.redes_socieles p{
+
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+
+
+
+@keyframes typing {
+    from {
+      width: 0%;
+      padding: 0%;
+    }
+    to {
+      width: 50%;
+    }
+}
+
+  
+@media (max-width: 600px) {
+    .logo img{
+       border-radius: 50%;
+       width: 60px;
+       height: 60px;
+       text-align: center;
+       padding-left: 5px;
+       
+    }
+
+    .buscador{
+        padding-left: 5px;
+    }
+
+    .nav_menu, .menu, .nav_input{
+        display: none;
+    }
+
+   
+
+    .nav_lavel{
+        display: block;
+        cursor: pointer;
+    }
+    .nav_menu{
+        position: fixed;
+        top: 100px;
+        bottom: 0;
+        background: url(Fondo\ Trabajo\ 3.jpg);
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+    }
+
+.nav_img{
+    display: block;
+}
+
+.nav_item {
+    font-weight: 900;
+    text-align: center;
+}
+
+    
+    
+    header{
+        align-items:center;
+    }
+
+
+    .nosotros{
+        background-image: url(Fondo\ Trabajo\ 5.jpg); 
+        background-size: cover;
+        display: flow-root;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+    }
+    .nosotros h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size:xx-large;
+        text-align: center;
+        text-decoration: underline;
+        
+    }
+
+    .nosotros h2{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: large;
+        text-align: center;
+        text-decoration: underline;
+        width: 1%;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 1s steps(48) 1s 1 normal both, blink 1s steps(1) none;
+    }
+
+    .nosotros img{
+        border-radius: 50%;
+        width: 150px;
+        position: fixed;
+        
+    }
+    .nosotros p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: xx-small;
+        font-weight: bolder;
+        text-align: center;
+        padding: 5%;
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 1s steps(50) 1s 1 normal both, blink 1s steps(1) none;
+    }
+
+    .menu a{
+        align-items: center;
+    }
+@keyframes typing {
+    from {
+        width: 0%;
+        padding: 0%;
+    }
+    to {
+      width: 90%;
+    }
+}
+.productos_principales{
+    background-image: url(Fondo\ Trabajo\ 2.jpg);
+    background-size: cover;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    justify-content: center;
+    width: 100%;
+    height: 2700px;
+}
+.productos_principales .cartas{
+    background:url(Fondo\ Trabajo.jpg);
+    width: 230px;
+    height: 400px;
+    border-radius: 8px;
+    border: 4px solid rgb(80, 7, 7);
+    box-shadow: 0 2px 2px rgba(224, 20, 20, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+
+.redes_socieles a{
+    margin: 5px;
+}
+
+.redes_socieles a img{
+    margin-left: 40px;
+    width: 50px;
+}
+
+}
